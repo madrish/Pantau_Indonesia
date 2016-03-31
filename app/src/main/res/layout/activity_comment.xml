@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_marginTop="@dimen/pad_20dp">
+    <ListView
+        android:id="@+id/lvComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="#ededed"
+        tools:listitem="@layout/activity_comment_adapter">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ededed"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:hint="Write a comment..."
+                android:textSize="@dimen/txt_16"
+                android:paddingLeft="5dp"
+                android:layout_weight="1.22" />
+
+            <Button
+                android:id="@+id/sendComBtn"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:text="send"
+                android:textColor="#fff"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rect_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

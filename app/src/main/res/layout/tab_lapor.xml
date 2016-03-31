@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout11">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Apa yang ingin Anda laporkan?"
+        android:id="@+id/apa"
+        android:layout_marginTop="25dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/apa">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nama Proyek : "
+            android:id="@+id/tKepada"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kepadatxt"
+            android:hint="Tulis judul disini..."
+            android:textSize="15dp"
+            android:maxHeight="100dp"
+            android:maxLength="50"
+            android:maxLines="10"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:id="@+id/oke">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Judul : "
+            android:id="@+id/tJudul"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/judultxt"
+            android:hint="Tulis judul disini..."
+            android:textSize="15dp"
+            android:maxHeight="100dp"
+            android:maxLength="50"
+            android:maxLines="10"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:weightSum="1"
+        android:layout_below="@+id/oke"
+        android:id="@+id/satu"
+        android:layout_alignParentBottom="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Laporan : "
+            android:id="@+id/tIsi"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/isitxt"
+                android:hint="Tulis laporan disini..."
+                android:textSize="15dp"
+                android:maxHeight="150dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:id="@+id/kirimlaporan"
+        android:background="@drawable/rect_button"
+        android:textColor="@color/colorWhite0"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="right" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

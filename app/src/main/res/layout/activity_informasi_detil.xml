@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.pantauindonesia.app.InformasiDetil">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.90"
+        android:id="@+id/scrollView"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Konstruksi"
+                android:textColor="@color/main_text_dark_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/namaKonstruksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_dark_gray"
+                android:text="Lokasi Konstruksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:id="@+id/lokasiKonstruksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instansi"
+                android:textColor="@color/main_text_dark_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:id="@+id/instansiKonstruksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satuan Kerja"
+                android:textColor="@color/main_text_dark_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:text="-"
+                android:id="@+id/satkerKonstruksi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai Pagu"
+                android:textColor="@color/main_text_dark_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:text="-"
+                android:id="@+id/nilaiPagu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nilai HPS"
+                android:textColor="@color/main_text_dark_gray"
+                android:id="@+id/textView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:id="@+id/nilaiHPS" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Penggarap"
+                android:textColor="@color/main_text_dark_gray"
+                android:id="@+id/textView11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:id="@+id/namaPenggarap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Penggarap"
+                android:textColor="@color/main_text_dark_gray"
+                android:id="@+id/textView13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:id="@+id/alamatPenggarap" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NPWP"
+                android:textColor="@color/main_text_dark_gray"
+                android:id="@+id/textView15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_signin_btn_dark_text_disabled"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:id="@+id/nomorNPWP" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/pad_10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/proyek_like_inactive"
+                android:id="@+id/likeButton"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:id="@+id/nLike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="nLike"
+                android:text="0"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/proyek_dislike_inactive"
+                android:id="@+id/dislikeButton"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:id="@+id/nDislike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="nDislike"
+                android:text="0"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/proyek_comment"
+                android:id="@+id/commentButton"
+                android:background="#00ffffff" />
+
+            <TextView
+                android:id="@+id/nComment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="nComment"
+                android:text="0"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/proyek_share"
+            android:id="@+id/shareButton"
+            android:background="#00ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
