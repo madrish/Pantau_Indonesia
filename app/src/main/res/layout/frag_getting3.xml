@@ -79,9 +79,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_alignParentTop="false"
         android:id="@+id/linearLayout5"
-        android:layout_above="@+id/textNext">
+        android:layout_above="@+id/linearLayout7"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="20dp">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -107,31 +109,50 @@
             android:clickable="false"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="NEXT"
-        android:id="@+id/textNext"
-        android:textColor="@color/colorPrimary"
-        android:layout_gravity="right"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="false"
-        android:layout_marginRight="10dp"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout7"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rect_btn_noradius"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_centerHorizontal="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="PREVIOUS"
-        android:id="@+id/textPrev"
-        android:textColor="@color/colorPrimary"
-        android:layout_gravity="right"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="PREVIOUS"
+            android:id="@+id/textPrev"
+            android:textColor="@color/colorWhite0"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="0.5" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView11"
+            android:background="@drawable/pembatas"
+            android:src="@drawable/pembatas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NEXT"
+            android:id="@+id/textNext"
+            android:textColor="@color/colorWhite0"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
 </RelativeLayout>
