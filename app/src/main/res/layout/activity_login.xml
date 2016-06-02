@@ -28,7 +28,7 @@
         android:id="@+id/editText2"
         android:hint="Password"
         android:layout_marginTop="171dp"
-        android:textColor="@color/colorRed0"
+        android:textColor="@color/colorBlack1"
         android:maxLines="1" />
 
     <Button
